@@ -32,11 +32,13 @@
 /************UseState************/
 import React from "react";
 import StateExamble from "./component/State";
+import UseEffectExample from "./component/UseEffectExample";
 
 const App = () => {
   return (
     <div>
-      <StateExamble/>
+      {/* <StateExamble/> */}
+      <UseEffectExample/>
     </div>
   )
 }
