@@ -30,17 +30,21 @@
 
 
 /************UseState************/
-import React from "react";
+import React , {useContext} from "react";
 import StateExamble from "./component/State";
 import UseEffectExample from "./component/UseEffectExample";
 import UseRefExample from "./component/UseRefExample";
+import {ColorContext} from "./component/UseContextExample";
 
 const App = () => {
+
+  const data = useContext(ColorContext)
   return (
     <div>
       {/* <StateExamble/> */}
       {/* <UseEffectExample/> */}
-      <UseRefExample/>
+      {/* <UseRefExample/> */}
+      {data}
     </div>
   )
 }

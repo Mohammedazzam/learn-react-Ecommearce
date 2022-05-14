@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { UseContextProvider } from './component/UseContextExample';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+//4-Wrap all app with Provider
+ReactDOM.render(
+  <UseContextProvider>
     <App />
-  </React.StrictMode>
-);
+  </UseContextProvider>
+  , document.getElementById('root'))
+
 
