@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+// import React from "react";
+// import NavBar from "./component/NavBar"
+// import Footer from "./component/Footer"
+// import Content from "./component/Content"
+// import About from "./component/About"
+// import { BrowserRouter, Route, Routes } from 'react-router-dom'
+// import ErrorNotFound from "./component/Error404"
+// import Home from "./component/Home"
 
-function App() {
+// const App = () => {
+//   return (
+//     <div>
+//       <NavBar />
+
+//       <BrowserRouter>
+//         <Routes>
+//         <Route path="/" element={<Home />}/>
+//         <Route path="/content" element={<Content />}/>
+//           <Route path="/about" element={<About />}/>
+//           <Route path="/footer" element={<Footer />}/>
+//           <Route path="/*" element={<ErrorNotFound />}/>
+//         </Routes>
+//       </BrowserRouter>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+/************UseState************/
+import React from "react";
+import StateExamble from "./component/State";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <StateExamble/>
     </div>
-  );
+  )
 }
 
 export default App;
