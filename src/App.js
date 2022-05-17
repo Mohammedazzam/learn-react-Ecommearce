@@ -30,21 +30,71 @@
 
 
 /************UseState************/
+// import React , {useContext} from "react";
+// import StateExamble from "./component/State";
+// import UseEffectExample from "./component/UseEffectExample";
+// import UseRefExample from "./component/UseRefExample";
+// import {ColorContext} from "./component/UseContextExample";
+
+// const App = () => {
+
+//   const data = useContext(ColorContext)
+//   return (
+//     <div>
+//       {/* <StateExamble/> */}
+//       {/* <UseEffectExample/> */}
+//       {/* <UseRefExample/> */}
+//       {data}
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+
+
+
+
+/**************UseContext***********/
+// import React , {useContext} from "react";
+// import {ColorContext} from "./component/UseContextExample";
+// import UseRefExample from "./component/UseRefExample";
+
+// const App = () => {
+
+//   const {data , changeData} = useContext(ColorContext)
+//   return (
+//     <div>
+//       {data}
+//       <UseRefExample/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+
+
+
+
+
+
 import React , {useContext} from "react";
-import StateExamble from "./component/State";
-import UseEffectExample from "./component/UseEffectExample";
-import UseRefExample from "./component/UseRefExample";
 import {ColorContext} from "./component/UseContextExample";
+import UseRefExample from "./component/UseRefExample";
 
 const App = () => {
 
-  const data = useContext(ColorContext)
+  const {data , changeData} = useContext(ColorContext)
   return (
     <div>
-      {/* <StateExamble/> */}
-      {/* <UseEffectExample/> */}
-      {/* <UseRefExample/> */}
-      {data}
+      {data.id}
+      {data.name}
+      <UseRefExample/>
     </div>
   )
 }
