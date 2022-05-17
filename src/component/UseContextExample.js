@@ -6,7 +6,7 @@ const ColorContext = createContext();
 //2-create provider
 const UseContextProvider = ({children}) => {
   return (
-    <ColorContext.Provider value='white'>
+    <ColorContext.Provider value='red'>
       {children}
     </ColorContext.Provider>
   )
