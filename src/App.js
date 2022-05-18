@@ -105,14 +105,31 @@
 
 /************UseMemo*************/
 
-import React , {useContext} from "react";
-import UseMemoExample from "./component/UseMemoExample";
+// import React , {useContext} from "react";
+// import UseMemoExample from "./component/UseMemoExample";
+
+// const App = () => {
+
+//   return (
+//     <div>
+//       <UseMemoExample/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+/************UseReducer*************/
+import React , {useReducer} from "react";
+import UseReduserExample from "./component/UseReduserExample";
 
 const App = () => {
 
   return (
     <div>
-      <UseMemoExample/>
+      <UseReduserExample/>
     </div>
   )
 }
