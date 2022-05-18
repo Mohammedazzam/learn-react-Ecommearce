@@ -83,18 +83,36 @@
 
 
 
+// import React , {useContext} from "react";
+// import {ColorContext} from "./component/UseContextExample";
+// import UseRefExample from "./component/UseRefExample";
+
+// const App = () => {
+
+//   const {data , changeData} = useContext(ColorContext)
+//   return (
+//     <div>
+//       {data.id}
+//       {data.name}
+//       <UseRefExample/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+/************UseMemo*************/
+
 import React , {useContext} from "react";
-import {ColorContext} from "./component/UseContextExample";
-import UseRefExample from "./component/UseRefExample";
+import UseMemoExample from "./component/UseMemoExample";
 
 const App = () => {
 
-  const {data , changeData} = useContext(ColorContext)
   return (
     <div>
-      {data.id}
-      {data.name}
-      <UseRefExample/>
+      <UseMemoExample/>
     </div>
   )
 }
