@@ -122,14 +122,32 @@
 
 
 /************UseReducer*************/
-import React , {useReducer} from "react";
-import UseReduserExample from "./component/UseReduserExample";
+// import React , {useReducer} from "react";
+// import UseReduserExample from "./component/UseReduserExample";
+
+// const App = () => {
+
+//   return (
+//     <div>
+//       <UseReduserExample/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+
+/************CustomHook*************/
+
+import React from "react";
+import UseCustomHook from "./component/UseCustomHook";
 
 const App = () => {
 
   return (
     <div>
-      <UseReduserExample/>
+      <UseCustomHook/>
     </div>
   )
 }
