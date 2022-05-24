@@ -140,14 +140,31 @@
 
 /************CustomHook*************/
 
+// import React from "react";
+// import UseCustomHook from "./component/UseCustomHook";
+
+// const App = () => {
+
+//   return (
+//     <div>
+//       <UseCustomHook/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+
+/************FetchAxios*************/
+
 import React from "react";
-import UseCustomHook from "./component/UseCustomHook";
+import FetchAxios from "./component/FetchAxios";
 
 const App = () => {
 
   return (
     <div>
-      <UseCustomHook/>
+    <FetchAxios/>
     </div>
   )
 }
